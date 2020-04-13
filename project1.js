@@ -95,7 +95,7 @@ document.addEventListener("DOMContentLoaded", () =>{
   return false
   }
 
-  //checks all possible diagonal winning combinations that go upwards. returns false if winning combination found, false otherwise
+  //checks all possible diagonal winning combinations that go upwards. returns true if winning combination found, false otherwise
   checkForwardDiagonal = () =>{
     for (let row = 1; row <=3; row = row+1)
     {
