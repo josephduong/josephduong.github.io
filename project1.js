@@ -139,7 +139,7 @@ document.addEventListener("DOMContentLoaded", () =>{
 
 
 
-  document.querySelector("#col1").addEventListener("click", (e)=>{
+  document.querySelector("#col1").addEventListener("click", (e)=>{ //the following code (until line 161) runs when the button called "col1" is clicked.
     col1.count = col1.count +1;
     col1.count.toString();
     if (turn % 2 == 0){ //boolean statement to control which tile piece is added, depending on turn number.
@@ -154,11 +154,14 @@ document.addEventListener("DOMContentLoaded", () =>{
       win(); //if winning combination found, then winning message is displayed.
     }
     else {
-      turn = turn+1;
+      turn = turn+1; //increments the turn number if there is no win yet.
     }
 
   })
 
+  
+  //the following code blocks are the same as the block from line 141-160, the only difference is that they are for the different
+  //columns of the game board.
   document.querySelector("#col2").addEventListener("click", (e)=>{
     col2.count = col2.count +1;
     col2.count.toString();
