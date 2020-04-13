@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", () =>{
     return false
   }
 
-  //checkVert() checks all horizontal winning combinations that include the space the player just added to. Returns true if there's a winning combination, false otherwise.
+  //checkVert() checks all vertical winning combinations that include the space the player just added to. Returns true if there's a winning combination, false otherwise.
   checkVert = (row, col) =>{
     for (let i = 1; i <= 3; i = i+1)
     {
